@@ -12,7 +12,11 @@ export default function App() {
   const load = () => {
     $root.innerHTML = /* html */ `
       <main class="h-screen p-20 grid place-items-center" id="content">
-        <div class="flex gap-10 ">
+        <div>
+          <h1 class="text-3xl font-medium mb-5 text-center">Calificaciones de Estudiantes</h1>
+          <p class="m-2 p-4 bg-pink-100 font-thin rounded-lg">Esta aplicación crea, edita y elimina calificaciones de estudiantes.</p>
+        </div>
+        <div class="flex gap-10">
           ${Form(dataObject, load)}
           ${DataTable(dataObject)}
         </div>
